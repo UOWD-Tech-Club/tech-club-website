@@ -1,0 +1,5 @@
+{
+    "*.{js, jsx}": [
+        "./node_modules/.bin/eslint — fix --report-unused-disable-directives --max-warnings 0"
+    ]
+}

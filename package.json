@@ -7,14 +7,6 @@
       "pre-commit": "lint-staged"
     }
   },
-  "lint-staged": {
-    "frontend/**/*.{js, jsx}": [
-      ".frontend/node_modules/.bin/eslint — fix"
-    ],
-    "backend/*.js": [
-      ".frontend/node_modules/.bin/eslint — fix"
-    ]
-  },
   "devDependencies": {
     "lint-staged": "^15.2.2",
     "husky": "^4.3.8"
