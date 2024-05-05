@@ -8,17 +8,11 @@
     }
   },
   "lint-staged": {
-    "frontend/*.js": [
-      ".frontend/node_modules/.bin/eslint — fix",
-      "git add"
-    ],
-    "frontend/*.jsx": [
-      ".frontend/node_modules/.bin/eslint — fix",
-      "git add"
+    "frontend/*.{js, jsx}": [
+      ".frontend/node_modules/.bin/eslint — fix"
     ],
     "backend/*.js": [
-      ".frontend/node_modules/.bin/eslint — fix",
-      "git add"
+      ".frontend/node_modules/.bin/eslint — fix"
     ]
   },
   "devDependencies": {
