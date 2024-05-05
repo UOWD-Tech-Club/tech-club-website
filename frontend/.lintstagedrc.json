@@ -1,0 +1,5 @@
+{
+    "*.jsx": [
+        "npx eslint --fix --report-unused-disable-directives --max-warnings 0"
+    ]
+}
