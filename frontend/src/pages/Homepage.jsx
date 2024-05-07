@@ -1,5 +1,6 @@
 import Navbar from "../layout/Navbar";
 import Footer from "../layout/Footer";
+import styles from "./Homepage.module.css";
 
 function Homepage() {
 	return (
