@@ -1,6 +1,9 @@
-import styles from "./Events.module.css";
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Carousel from "react-multi-carousel";
+
+import { EventData } from "../data/EventData";
+import styles from "./Events.module.css";
+import Event from "./Event";
 
 const responsive = {
 	desktop: {
@@ -49,55 +52,14 @@ function Events() {
 						</div>
 					</div>
 					<Carousel responsive={responsive} containerClass={styles.rightColumn}>
-						<div className={styles.event}>
-							<span className={styles.eventTime}>
-								06.05.24 / 3:00 pm - 4:00 pm
-							</span>
-							<span className={styles.eventTitle}>
-								Machine Learning Workshop
-							</span>
-							<div className={styles.eventTags}>
-								<span className={styles.tag}>Coding</span>
-								<span className={styles.tag}>Workshop</span>
-							</div>
-						</div>
-						<div className={styles.event}>
-							<span className={styles.eventTime}>
-								06.05.24 / 3:00 pm - 4:00 pm
-							</span>
-							<span className={styles.eventTitle}>Introduction to Python</span>
-							<div className={styles.eventTags}>
-								<span className={styles.tag}>Coding</span>
-								<span className={styles.tag}>Workshop</span>
-							</div>
-						</div>
-						<div className={styles.event}>
-							<span className={styles.eventTime}>
-								06.05.24 / 3:00 pm - 4:00 pm
-							</span>
-							<span className={styles.eventTitle}>STEM Mixer</span>
-							<div className={styles.eventTags}>
-								<span className={styles.tag}>Event</span>
-							</div>
-						</div>
-						<div className={styles.event}>
-							<span className={styles.eventTime}>
-								06.05.24 / 3:00 pm - 4:00 pm
-							</span>
-							<span className={styles.eventTitle}>STEM Mixer</span>
-							<div className={styles.eventTags}>
-								<span className={styles.tag}>Event</span>
-							</div>
-						</div>
-						<div className={styles.event}>
-							<span className={styles.eventTime}>
-								06.05.24 / 3:00 pm - 4:00 pm
-							</span>
-							<span className={styles.eventTitle}>STEM Mixer</span>
-							<div className={styles.eventTags}>
-								<span className={styles.tag}>Event</span>
-							</div>
-						</div>
+						{EventData.map((event) => (
+							<Event
+								dateTime={event.dateTime}
+								title={event.title}
+								tags={event.tags}
+								key={event.id}
+							/>
+						))}
 					</Carousel>
 				</div>
 			</div>
