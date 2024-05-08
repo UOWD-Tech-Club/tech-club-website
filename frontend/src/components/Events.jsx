@@ -56,6 +56,7 @@ function Events() {
 							<Event
 								dateTime={event.dateTime}
 								title={event.title}
+								img={event.img}
 								tags={event.tags}
 								key={event.id}
 							/>
