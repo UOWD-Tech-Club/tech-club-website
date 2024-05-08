@@ -1,17 +1,17 @@
-import styles from "./Homepage.module.css";
-import Navbar from "../layout/Navbar";
-import Footer from "../layout/Footer";
+import Navbar from "../layout/Navbar/Navbar";
+import Footer from "../layout/Footer/Footer";
+import Hero from "../layout/Hero/Hero";
 import Events from "../components/Events";
 
 function Homepage() {
 	return (
 		<>
-			{/* <Navbar /> */}
-			<main className={styles.homepage}>
-				{/* Homepage Component */}
+			<Navbar />
+			<main>
+				<Hero />
 				<Events />
 			</main>
-			{/* <Footer /> */}
+			<Footer />
 		</>
 	);
 }

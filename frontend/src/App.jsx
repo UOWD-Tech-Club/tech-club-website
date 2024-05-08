@@ -1,12 +1,14 @@
 import "./App.css";
+import Events from "./components/Events";
 import Hero from "./layout/Hero/Hero";
-import Footer from "./layout/Footer/Footer";
+// import Homepage from "./pages/Homepage";
 
 function App() {
 	return (
 		<>
+			{/* <Homepage /> */}
 			<Hero />
-			<Footer/>
+			<Events />
 		</>
 	);
 }
