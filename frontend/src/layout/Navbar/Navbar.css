@@ -1,0 +1,17 @@
+nav {
+    position: absolute;
+    width: 1200px;
+    top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    padding: 0;
+    gap: 80px;
+    font-family: Karla;
+    font-size: 23.04px;
+    font-weight: 500;
+    line-height: 32px;
+}
