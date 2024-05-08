@@ -1,4 +1,24 @@
 import styles from "./Events.module.css";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
+const responsive = {
+	desktop: {
+		breakpoint: { max: 3000, min: 1024 },
+		items: 3,
+		slidesToSlide: 3, // optional, default to 1.
+	},
+	tablet: {
+		breakpoint: { max: 1024, min: 464 },
+		items: 2,
+		slidesToSlide: 2, // optional, default to 1.
+	},
+	mobile: {
+		breakpoint: { max: 464, min: 0 },
+		items: 1,
+		slidesToSlide: 1, // optional, default to 1.
+	},
+};
 
 function Events() {
 	return (
@@ -28,7 +48,7 @@ function Events() {
 							<div className={styles.dot}></div>
 						</div>
 					</div>
-					<div className={styles.rightColumn}>
+					<Carousel responsive={responsive} containerClass={styles.rightColumn}>
 						<div className={styles.event}>
 							<span className={styles.eventTime}>
 								06.05.24 / 3:00 pm - 4:00 pm
@@ -60,7 +80,25 @@ function Events() {
 								<span className={styles.tag}>Event</span>
 							</div>
 						</div>
-					</div>
+						<div className={styles.event}>
+							<span className={styles.eventTime}>
+								06.05.24 / 3:00 pm - 4:00 pm
+							</span>
+							<span className={styles.eventTitle}>STEM Mixer</span>
+							<div className={styles.eventTags}>
+								<span className={styles.tag}>Event</span>
+							</div>
+						</div>
+						<div className={styles.event}>
+							<span className={styles.eventTime}>
+								06.05.24 / 3:00 pm - 4:00 pm
+							</span>
+							<span className={styles.eventTitle}>STEM Mixer</span>
+							<div className={styles.eventTags}>
+								<span className={styles.tag}>Event</span>
+							</div>
+						</div>
+					</Carousel>
 				</div>
 			</div>
 		</section>

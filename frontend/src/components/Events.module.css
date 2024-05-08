@@ -55,24 +55,20 @@
 }
 
 .rightColumn {
-	display: flex;
-	flex-grow: 1;
 	width: 70%;
 	margin-left: 1.25rem;
-	gap: 20px;
 }
 
 .event {
+	margin-right: 20px;
 	background-color: #00cca4;
 	display: flex;
 	flex-direction: column;
-	overflow: hidden;
-	position: relative;
 	aspect-ratio: 0.8;
+	overflow: hidden;
 	align-items: start;
 	padding: 1.25rem 1.25rem 2rem 1.25rem;
 	justify-content: flex-end;
-	justify-self: flex-end;
 	background: linear-gradient(
 			180deg,
 			rgba(0, 204, 164, 0) 22.62%,
@@ -84,12 +80,10 @@
 }
 
 .eventTime {
-	position: relative;
 	font: 14px Aldrich, sans-serif;
 }
 
 .eventTitle {
-	position: relative;
 	line-height: normal;
 	margin-top: 4px;
 	font-size: 1.5rem;
@@ -97,7 +91,6 @@
 }
 
 .eventTags {
-	position: relative;
 	display: flex;
 	margin-top: 12px;
 	gap: 10px;
