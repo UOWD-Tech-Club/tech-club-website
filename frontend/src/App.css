@@ -2,10 +2,10 @@
 
 /* Use this for first div inside a section for responsive widths */
 .container {
-	--max-width: ;
+	--max-width: 75rem;
 	--padding: 1rem;
 
-	width: min(var(--max-width), 100% - var(--padding));
+	width: min(var(--max-width), 100% - var(--padding) * 2);
 	margin-inline: auto;
 }
 
