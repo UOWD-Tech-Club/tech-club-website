@@ -1,0 +1,40 @@
+.event {
+	margin-right: 20px;
+	background-color: #00cca4;
+	display: flex;
+	flex-direction: column;
+	aspect-ratio: 0.8;
+	overflow: hidden;
+	align-items: start;
+	padding: 1.25rem 1.25rem 2rem 1.25rem;
+	justify-content: flex-end;
+}
+
+.eventTime {
+	font: 14px Aldrich, sans-serif;
+}
+
+.eventTitle {
+	line-height: normal;
+	margin-top: 4px;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.eventTags {
+	display: flex;
+	margin-top: 12px;
+	gap: 10px;
+	font-size: 10px;
+	white-space: nowrap;
+	text-align: center;
+}
+
+.tag {
+	font-family: Aldrich, sans-serif;
+	justify-content: center;
+	border-color: var(--clr-white);
+	border-style: solid;
+	border-width: 1px;
+	padding: 4px 8px;
+}
