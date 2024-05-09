@@ -2,8 +2,11 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-app.get('/', (req, res) => {
-    res.send('Hello World!');
+const db = require('./db.js')
+
+app.get('/', async (req, res) => {
+
+    res.status(200).status('Working Good :)')
 })
 
 app.listen(port, () => {
