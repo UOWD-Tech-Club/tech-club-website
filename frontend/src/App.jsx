@@ -8,7 +8,7 @@ function App() {
 	return (
 		<>
 			{/* <Homepage /> */}
-			{/* <Hero /> */}
+			<Hero />
 			<Events />
 			<Newsfeed />
 		</>
