@@ -5,9 +5,13 @@
 			rgba(0, 0, 0, 0) 93.01%
 		),
 		url("../../assets/hero-image.png") lightgray 50% / cover no-repeat;
+	padding: 15rem 5rem 10rem;
+	max-height: 100vh;
+}
+
+.flex {
 	display: flex;
-	padding-top: 10rem;
-	height: 100vh;
+	flex-direction: column;
 }
 
 .textContainer {
@@ -39,6 +43,7 @@
 }
 
 .btnContainer {
+	justify-self: flex-end;
 	margin-top: 8rem;
 	display: flex;
 	flex-direction: column;

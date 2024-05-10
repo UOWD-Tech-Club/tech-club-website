@@ -26,7 +26,7 @@ const responsive = {
 
 function Events() {
 	return (
-		<section>
+		<section className={styles.events}>
 			<div className='container'>
 				<div className={styles.flex}>
 					<div className={styles.leftColumn}>

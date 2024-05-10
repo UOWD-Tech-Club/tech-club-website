@@ -5,7 +5,7 @@ import Button from "../Button";
 
 function Newsfeed() {
 	return (
-		<section>
+		<section className={styles.newsfeed}>
 			<div className='container'>
 				<div className={styles.flex}>
 					<div className={styles.topContainer}>

@@ -28,11 +28,6 @@ body::-webkit-scrollbar {
 	display: none;
 }
 
-section {
-	padding: 0 5rem 5rem;
-	max-height: 90vh;
-}
-
 h1 {
 	font-family: var(--ff-heading);
 	font-size: 3.5rem;
