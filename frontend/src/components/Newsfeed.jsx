@@ -1,6 +1,7 @@
 import styles from "./Newsfeed.module.css";
 import { NewsData } from "../data/NewsData";
 import NewsCard from "./NewsCard";
+import Button from "./Button";
 
 function Newsfeed() {
 	return (
@@ -28,6 +29,7 @@ function Newsfeed() {
 							/>
 						))}
 					</div>
+					<Button align={"right"} />
 				</div>
 			</div>
 		</section>
