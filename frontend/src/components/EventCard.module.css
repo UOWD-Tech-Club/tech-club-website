@@ -1,0 +1,20 @@
+.event {
+	margin-right: 20px;
+	display: flex;
+	flex-direction: column;
+	aspect-ratio: 0.8;
+	align-items: start;
+	padding: 1.25rem;
+	justify-content: flex-end;
+}
+
+.eventTime {
+	font: 0.8rem Aldrich, sans-serif;
+}
+
+.eventTitle {
+	line-height: normal;
+	margin-top: 4px;
+	font-size: 1.5rem;
+	font-weight: 700;
+}

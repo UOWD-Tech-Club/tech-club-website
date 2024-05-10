@@ -19,23 +19,3 @@
 	grid-template-columns: repeat(12, 1fr);
 	gap: 1.25rem;
 }
-
-.card {
-	height: 15rem;
-	background-color: blue;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.card_5cols {
-	grid-column: span 5;
-}
-
-.card_4cols {
-	grid-column: span 4;
-}
-
-.card_3cols {
-	grid-column: span 3;
-}

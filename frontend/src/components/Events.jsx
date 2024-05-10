@@ -3,7 +3,7 @@ import Carousel from "react-multi-carousel";
 
 import { EventData } from "../data/EventData";
 import styles from "./Events.module.css";
-import Event from "./Event";
+import EventCard from "./EventCard";
 
 const responsive = {
 	desktop: {
@@ -53,7 +53,7 @@ function Events() {
 					</div>
 					<Carousel responsive={responsive} containerClass={styles.rightColumn}>
 						{EventData.map((event) => (
-							<Event
+							<EventCard
 								dateTime={event.dateTime}
 								title={event.title}
 								img={event.img}

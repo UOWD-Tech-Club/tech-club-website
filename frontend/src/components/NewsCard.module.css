@@ -1,0 +1,39 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	padding: 1.25rem 1.25rem 1.5rem 1.25rem;
+	justify-content: flex-end;
+	min-height: 15rem;
+}
+
+.cols_5 {
+	grid-column: span 5;
+}
+
+.cols_4 {
+	grid-column: span 4;
+}
+
+.cols_3 {
+	grid-column: span 3;
+}
+
+.title {
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: normal;
+	margin-bottom: 0.5rem;
+}
+
+.title_5 {
+	font-size: 2.4rem;
+}
+
+.title_4 {
+	font-size: 2rem;
+}
+
+.subtitle {
+	font: 0.8rem Aldrich, sans-serif;
+}

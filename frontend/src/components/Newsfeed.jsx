@@ -1,4 +1,6 @@
 import styles from "./Newsfeed.module.css";
+import { NewsData } from "../data/NewsData";
+import NewsCard from "./NewsCard";
 
 function Newsfeed() {
 	return (
@@ -14,24 +16,17 @@ function Newsfeed() {
 						</p>
 					</div>
 					<div className={styles.bottomContainer}>
-						<div className={`${styles.card} ${styles.card_5cols}`}>
-							News Card
-						</div>
-						<div className={`${styles.card} ${styles.card_4cols}`}>
-							News Card
-						</div>
-						<div className={`${styles.card} ${styles.card_3cols}`}>
-							News Card
-						</div>
-						<div className={`${styles.card} ${styles.card_3cols}`}>
-							News Card
-						</div>
-						<div className={`${styles.card} ${styles.card_4cols}`}>
-							News Card
-						</div>
-						<div className={`${styles.card} ${styles.card_5cols}`}>
-							News Card
-						</div>
+						{NewsData.map((news) => (
+							<NewsCard
+								cols={news.cols}
+								title={news.title}
+								author={news.author}
+								date={news.date}
+								img={news.img}
+								tags={news.tags}
+								key={news.id}
+							/>
+						))}
 					</div>
 				</div>
 			</div>
