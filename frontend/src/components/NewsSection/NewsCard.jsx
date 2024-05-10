@@ -1,5 +1,5 @@
 import styles from "./NewsCard.module.css";
-import CardTag from "./CardTag";
+import CardTag from "../CardTag";
 
 function NewsCard({ cols, title, author, date, img, tags }) {
 	const imageStyle = {

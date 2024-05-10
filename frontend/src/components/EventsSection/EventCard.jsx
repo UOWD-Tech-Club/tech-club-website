@@ -1,5 +1,5 @@
 import styles from "./EventCard.module.css";
-import CardTag from "./CardTag";
+import CardTag from "../CardTag";
 
 function EventCard({ dateTime, title, img, tags }) {
 	const imageStyle = {

@@ -10,11 +10,6 @@
 	margin-inline: auto;
 }
 
-section {
-	padding: 0 5rem 5rem;
-	max-height: 90vh;
-}
-
 /**** GENERAL STYLING ****/
 
 html {
@@ -26,10 +21,16 @@ body {
 	font-family: var(--ff-paragraph);
 	color: var(--clr-white);
 	overflow-y: scroll;
+	position: relative;
 }
 
 body::-webkit-scrollbar {
 	display: none;
+}
+
+section {
+	padding: 0 5rem 5rem;
+	max-height: 90vh;
 }
 
 h1 {
