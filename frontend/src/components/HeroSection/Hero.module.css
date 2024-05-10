@@ -1,0 +1,68 @@
+.hero {
+	background: linear-gradient(
+			180deg,
+			rgba(0, 204, 164, 0.6) 2.53%,
+			rgba(0, 0, 0, 0) 93.01%
+		),
+		url("../../assets/hero-image.png") lightgray 50% / cover no-repeat;
+	padding: 15rem 5rem 10rem;
+	max-height: 100vh;
+}
+
+.flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.textContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title {
+	font-family: var(--ff-title);
+	font-size: 11.25rem;
+	letter-spacing: 0.85rem;
+}
+
+.supertitle,
+.subtitle {
+	font-size: 4rem;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 0.4rem;
+}
+
+.supertitle {
+	align-self: flex-start;
+}
+
+.subtitle {
+	align-self: flex-end;
+}
+
+.btnContainer {
+	justify-self: flex-end;
+	margin-top: 8rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.2rem;
+}
+
+.btn {
+	font-size: 1rem;
+	letter-spacing: 0.14rem;
+	font-weight: 500;
+	padding: 0.5rem 1.5rem;
+	color: var(--clr-white);
+	border: 3px solid var(--clr-white);
+}
+
+.btnImg {
+	aspect-ratio: 1;
+	object-fit: auto;
+	object-position: center;
+	width: 1.8rem;
+}

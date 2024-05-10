@@ -1,3 +1,7 @@
+.events {
+	padding: 10rem 5rem 10rem;
+}
+
 .flex {
 	display: flex;
 	gap: 20px;

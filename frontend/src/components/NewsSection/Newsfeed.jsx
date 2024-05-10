@@ -1,11 +1,11 @@
 import styles from "./Newsfeed.module.css";
-import { NewsData } from "../data/NewsData";
+import { NewsData } from "../../data/NewsData";
 import NewsCard from "./NewsCard";
-import Button from "./Button";
+import Button from "../Button";
 
 function Newsfeed() {
 	return (
-		<section>
+		<section className={styles.newsfeed}>
 			<div className='container'>
 				<div className={styles.flex}>
 					<div className={styles.topContainer}>

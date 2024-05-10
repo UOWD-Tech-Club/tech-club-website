@@ -1,10 +1,10 @@
 import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
 
-import { EventData } from "../data/EventData";
+import { EventData } from "../../data/EventData";
 import styles from "./Events.module.css";
 import EventCard from "./EventCard";
-import Button from "./Button";
+import Button from "../Button";
 
 const responsive = {
 	desktop: {
@@ -26,7 +26,7 @@ const responsive = {
 
 function Events() {
 	return (
-		<section>
+		<section className={styles.events}>
 			<div className='container'>
 				<div className={styles.flex}>
 					<div className={styles.leftColumn}>

@@ -1,0 +1,27 @@
+header {
+	padding: 0 5rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.navbar {
+	padding-top: 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navlinks {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 4rem;
+	font-size: 1.4rem;
+	font-weight: 500;
+}
+
+.logo {
+	width: 4rem;
+}
