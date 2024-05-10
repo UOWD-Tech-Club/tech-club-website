@@ -1,0 +1,21 @@
+.flex {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+}
+
+.topContainer {
+	text-align: center;
+	max-width: 48rem;
+	margin: 0 auto;
+}
+
+.topContainer h2 {
+	margin-bottom: 1rem;
+}
+
+.bottomContainer {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: 1.25rem;
+}

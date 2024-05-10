@@ -3,7 +3,8 @@ import Carousel from "react-multi-carousel";
 
 import { EventData } from "../data/EventData";
 import styles from "./Events.module.css";
-import Event from "./Event";
+import EventCard from "./EventCard";
+import Button from "./Button";
 
 const responsive = {
 	desktop: {
@@ -34,15 +35,7 @@ function Events() {
 							We&apos;ve got exciting events lined up to fuel your tech passion.
 							Get ready to learn, connect, and create with the Tech Club.
 						</p>
-						<button className={styles.btn}>
-							<span className={styles.btnText}>SEE MORE</span>
-							<img
-								className={styles.btnImg}
-								loading='lazy'
-								src='\src\assets\Arrow.svg'
-								alt='Arrow'
-							/>
-						</button>
+						<Button align={"left"} />
 						<div className={styles.pagination}>
 							<div className={`${styles.dot} ${styles.active}`}></div>
 							<div className={styles.dot}></div>
@@ -53,7 +46,7 @@ function Events() {
 					</div>
 					<Carousel responsive={responsive} containerClass={styles.rightColumn}>
 						{EventData.map((event) => (
-							<Event
+							<EventCard
 								dateTime={event.dateTime}
 								title={event.title}
 								img={event.img}

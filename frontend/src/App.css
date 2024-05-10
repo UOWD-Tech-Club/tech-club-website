@@ -11,15 +11,25 @@
 }
 
 section {
-	padding: 5rem 0 5rem;
+	padding: 0 5rem 5rem;
+	max-height: 90vh;
 }
 
 /**** GENERAL STYLING ****/
+
+html {
+	overflow: hidden;
+}
+
 body {
 	background-color: var(--clr-black);
 	font-family: var(--ff-paragraph);
 	color: var(--clr-white);
-	/* overflow-y: hidden; */
+	overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+	display: none;
 }
 
 h1 {
@@ -43,8 +53,8 @@ h3 {
 }
 
 p {
-	font-size: 1.25;
-	font-weight: 400;
+	font-size: 1rem;
+	font-weight: 300;
 	line-height: 1.8rem;
-	opacity: 80%;
+	opacity: 90%;
 }
