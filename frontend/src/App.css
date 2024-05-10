@@ -15,11 +15,20 @@ section {
 }
 
 /**** GENERAL STYLING ****/
+
+html {
+	overflow: hidden;
+}
+
 body {
 	background-color: var(--clr-black);
 	font-family: var(--ff-paragraph);
 	color: var(--clr-white);
-	/* overflow-y: hidden; */
+	overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+	display: none;
 }
 
 h1 {
