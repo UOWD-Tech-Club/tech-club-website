@@ -3,7 +3,7 @@
 /* Use this for first div inside a section for responsive widths */
 .container {
 	--max-width: 82rem;
-	--padding: 1rem;
+	--padding: 2rem;
 
 	width: min(var(--max-width), 100% - var(--padding) * 2);
 	margin-inline: auto;
@@ -25,6 +25,22 @@ body {
 
 body::-webkit-scrollbar {
 	display: none;
+}
+
+section {
+	padding: 0 clamp(1rem, 8vw, 5rem);
+}
+
+@media screen and (max-width: 768px) {
+	section {
+		padding: 0 1rem;
+	}
+}
+
+@media screen and (max-width: 590px) {
+	section {
+		padding: 0;
+	}
 }
 
 h1 {

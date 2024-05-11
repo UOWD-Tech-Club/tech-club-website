@@ -5,13 +5,15 @@
 			rgba(0, 0, 0, 0) 93.01%
 		),
 		url("../../assets/hero-image.png") lightgray 50% / cover no-repeat;
-	padding: 12rem 5rem 15rem;
+	padding-top: min(12rem, 20vh);
+	min-height: min(100vh, 80vw);
 	max-height: 100vh;
 }
 
 .flex {
 	display: flex;
 	flex-direction: column;
+	padding-bottom: 5rem;
 }
 
 .textContainer {
@@ -22,13 +24,13 @@
 
 .title {
 	font-family: var(--ff-title);
-	font-size: 11.25rem;
+	font-size: clamp(6rem, 10vw, 11.25rem);
 	letter-spacing: 0.85rem;
 }
 
 .supertitle,
 .subtitle {
-	font-size: 4rem;
+	font-size: clamp(1rem, 4vw, 4rem);
 	font-weight: 400;
 	line-height: normal;
 	letter-spacing: 0.4rem;
@@ -52,7 +54,7 @@
 }
 
 .btn {
-	font-size: 1rem;
+	font-size: clamp(0.75rem, 1vw, 1rem);
 	letter-spacing: 0.14rem;
 	font-weight: 500;
 	padding: 0.5rem 1.5rem;
@@ -65,4 +67,33 @@
 	object-fit: auto;
 	object-position: center;
 	width: 1.8rem;
+}
+
+@media screen and (max-width: 1120px) {
+	.hero {
+		min-height: min(80vh, 80vw);
+	}
+
+	.title {
+		font-size: clamp(2rem, 9vw, 10rem);
+	}
+
+	.supertitle,
+	.subtitle {
+		font-size: clamp(1rem, 4vw, 2rem);
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.title {
+		text-align: center;
+		margin: 1rem 0 1rem;
+		font-size: clamp(2rem, 20vw, 8rem);
+	}
+
+	.supertitle,
+	.subtitle {
+		align-self: center;
+		text-align: center;
+	}
 }
