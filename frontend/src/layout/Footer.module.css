@@ -1,57 +1,89 @@
-
-.contentcontainer {
-    height:300px ;
-    padding: 80px; 
-    display: flex;
-    background: linear-gradient(0deg, rgba(0, 204, 164, 0.60) 0%, rgba(0, 0, 0, 0.00) 100%), #010100;
-  }
-
-
-
-.navigation, .socials {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-right: 20px;
+footer {
+	background: linear-gradient(
+			0deg,
+			rgba(0, 204, 164, 0.6) 0%,
+			rgba(0, 0, 0, 0) 100%
+		),
+		#010100;
+	padding: 5rem 5rem 3rem;
 }
-  
+
+.footerContainer {
+	display: flex;
+	justify-content: space-between;
+	gap: 5rem;
+}
+
+.footerlinks {
+	flex-grow: 1;
+	display: flex;
+	justify-content: space-between;
+	max-width: 20rem;
+}
+
+.links {
+	flex-grow: 1;
+}
+
+.links ul {
+	font-family: Karla;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.links h3 {
+	font-family: Aldrich;
+	font-size: 1.25rem;
+	line-height: 2rem;
+}
+
 .subscribe {
-  flex-grow: 0;
-  margin-left: auto;
+	flex-grow: 2;
+	display: flex;
+	flex-direction: column;
+	max-width: 40rem;
 }
 
-.subscribe input[type="text"] { 
-  background-color: black;
-  width: 250px;
-  color: #B8B8B8;
-  font-weight: 500;
-  height: 39px;
+.subscribe h3 {
+	font-size: 1.5rem;
+	letter-spacing: 0.2rem;
+	margin-bottom: 0.2rem;
+}
+
+.subscribe p {
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+.form {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.form input {
+	border: none;
+	background-color: var(--clr-black);
+	width: 80%;
+	height: 2rem;
+	color: var(--clr-white);
+	padding-left: 0.75rem;
+	font-size: 1rem;
+}
+
+.form input::placeholder {
+	color: var(--clr-white);
+	font-size: 1rem;
+	opacity: 70%;
+	font-weight: 300;
 }
 
 .subscribe button {
-  padding: 10px 10px;
-  background-color: #00cca4;
-}
-
-.subscribe input[type="text"]::placeholder {
-    color: white;
-    padding-left: 10px;
-    
-}
-.subscribe form{
-  padding-top: 20px;
-}
-
-.navigation ul, .subscribe span{
-font-family: Karla;
-font-size: 16px;
-font-weight: 400;
-}
-
-.navigation h3, .socials h3{
-font-family: Aldrich;
-font-size: 20px;
-font-weight: 400;
-line-height: 160%;
+	width: 20%;
+	line-height: normal;
+	border: none;
+	max-height: 2rem;
+	padding: 0.5rem 0.75rem;
+	background-color: var(--clr-primary);
+	font-weight: 500;
 }
