@@ -6,8 +6,7 @@
 		),
 		url("../../assets/hero-image.png") lightgray 50% / cover no-repeat;
 	padding-top: min(12rem, 20vh);
-	min-height: min(100vh, 80vw);
-	max-height: 100vh;
+	min-height: min(100vh, 70vw);
 }
 
 .flex {
@@ -71,7 +70,8 @@
 
 @media screen and (max-width: 1120px) {
 	.hero {
-		min-height: min(80vh, 80vw);
+		min-height: min(100vh, 50vw);
+		padding-top: 10rem;
 	}
 
 	.title {
@@ -80,7 +80,7 @@
 
 	.supertitle,
 	.subtitle {
-		font-size: clamp(1rem, 4vw, 2rem);
+		font-size: clamp(1.5rem, 4vw, 2rem);
 	}
 }
 
