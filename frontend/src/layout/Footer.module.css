@@ -1,0 +1,57 @@
+
+.contentcontainer {
+    height:300px ;
+    padding: 80px; 
+    display: flex;
+    background: linear-gradient(0deg, rgba(0, 204, 164, 0.60) 0%, rgba(0, 0, 0, 0.00) 100%), #010100;
+  }
+
+
+
+.navigation, .socials {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20px;
+}
+  
+.subscribe {
+  flex-grow: 0;
+  margin-left: auto;
+}
+
+.subscribe input[type="text"] { 
+  background-color: black;
+  width: 250px;
+  color: #B8B8B8;
+  font-weight: 500;
+  height: 39px;
+}
+
+.subscribe button {
+  padding: 10px 10px;
+  background-color: #00cca4;
+}
+
+.subscribe input[type="text"]::placeholder {
+    color: white;
+    padding-left: 10px;
+    
+}
+.subscribe form{
+  padding-top: 20px;
+}
+
+.navigation ul, .subscribe span{
+font-family: Karla;
+font-size: 16px;
+font-weight: 400;
+}
+
+.navigation h3, .socials h3{
+font-family: Aldrich;
+font-size: 20px;
+font-weight: 400;
+line-height: 160%;
+}
