@@ -34,18 +34,18 @@ header {
 .navlinks a:hover {
 	background-color: var(--clr-white);
 	color: var(--clr-black);
-	scale: 1.1;
+	/* scale: 1.1; */
 }
 
 .navlinks a:active {
 	background-color: var(--clr-light);
 	color: var(--clr-black);
-	scale: 1;
+	/* scale: 1; */
 }
 
 .logo {
 	width: clamp(3rem, 4vw, 4rem);
-	transition: all 0.2s ease;
+	transition: all 0.2s ease-in-out;
 }
 
 .logo:hover {
