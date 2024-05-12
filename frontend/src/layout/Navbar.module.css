@@ -18,7 +18,6 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	gap: clamp(2rem, 4vw, 4rem);
-	transition: all 0.2s ease;
 }
 
 .navlinks a {
@@ -27,18 +26,21 @@ header {
 	font-size: clamp(1rem, 2vw, 1.4rem);
 	font-weight: 500;
 	line-height: normal;
-	padding-bottom: 3px;
-	border-bottom: 2px solid transparent;
+	padding: 3px 5px;
+	border-radius: 2px;
+	transition: all 0.2s ease;
 }
 
 .navlinks a:hover {
-	border-bottom: 2px solid var(--clr-light);
-	color: var(--clr-light);
+	background-color: var(--clr-white);
+	color: var(--clr-black);
+	scale: 1.1;
 }
 
 .navlinks a:active {
-	border-bottom: 2px solid var(--clr-black);
+	background-color: var(--clr-light);
 	color: var(--clr-black);
+	scale: 1;
 }
 
 .logo {
@@ -47,11 +49,11 @@ header {
 }
 
 .logo:hover {
-	scale: 1.1;
+	scale: 1.2;
 }
 
 .logo:active {
-	scale: 0.9;
+	scale: 1;
 }
 
 .menuBtn {
