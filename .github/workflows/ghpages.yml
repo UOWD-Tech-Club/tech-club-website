@@ -1,5 +1,6 @@
 name: ghpages-deployment
-on: workflow_dispatch
+on: push
+ # workflow_dispatch
 permissions:
   contents: read
   pages: write
