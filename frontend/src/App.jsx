@@ -11,7 +11,7 @@ function App() {
 			<BrowserRouter>
 				<Navbar />
 				<Routes>
-					<Route path='/' element={<Homepage />} />
+					<Route path='/tech-club-website/' element={<Homepage />} />
 				</Routes>
 				<Footer />
 			</BrowserRouter>
