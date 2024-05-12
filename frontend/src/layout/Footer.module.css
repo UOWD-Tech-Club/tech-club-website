@@ -21,6 +21,18 @@ footer {
 	max-width: 20rem;
 }
 
+.footerlinks a {
+	transition: all 0.2s ease;
+}
+
+.footerlinks a:hover {
+	color: var(--clr-light);
+}
+
+.footerlinks a:active {
+	color: var(--clr-black);
+}
+
 .links {
 	flex-grow: 1;
 }
@@ -86,4 +98,15 @@ footer {
 	padding: 0.5rem 0.75rem;
 	background-color: var(--clr-primary);
 	font-weight: 500;
+	transition: all 0.2s ease;
+}
+
+.subscribe button:hover {
+	background-color: var(--clr-white);
+	color: var(--clr-black);
+}
+
+.subscribe button:active {
+	background-color: var(--clr-black);
+	color: var(--clr-white);
 }
