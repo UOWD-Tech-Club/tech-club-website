@@ -6,6 +6,7 @@
 :root {
 	/* Colors */
 	--clr-primary: #00cca4;
+	--clr-light: #00ffcd;
 	--clr-white: #f2f2f2;
 	--clr-black: #010100;
 
@@ -102,5 +103,5 @@ textarea:not([rows]) {
 	scroll-margin-block: 5ex;
 }
 a {
-	text-decoration: none
-};
+	text-decoration: none;
+}
