@@ -24,7 +24,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with: 
-          path: './dist'
+          path: '/home/runner/work/tech-club-website/tech-club-website/frontend/dist'
   deploy:
     runs-on: ubuntu-latest
     needs: build
