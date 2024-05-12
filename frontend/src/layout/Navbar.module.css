@@ -1,5 +1,4 @@
 header {
-	padding: 0 5rem;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -11,17 +10,64 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: clamp(2rem, 2vw, 2rem);
 }
 
 .navlinks {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 4rem;
-	font-size: 1.4rem;
+	gap: clamp(2rem, 4vw, 4rem);
+}
+
+.navlinks a {
+	color: var(--clr-white);
+	text-decoration: none;
+	font-size: clamp(1rem, 2vw, 1.4rem);
 	font-weight: 500;
+	line-height: normal;
+	padding: 3px 5px;
+	border-radius: 2px;
+	transition: all 0.2s ease;
+}
+
+.navlinks a:hover {
+	background-color: var(--clr-white);
+	color: var(--clr-black);
+	/* scale: 1.1; */
+}
+
+.navlinks a:active {
+	background-color: var(--clr-light);
+	color: var(--clr-black);
+	/* scale: 1; */
 }
 
 .logo {
-	width: 4rem;
+	width: clamp(3rem, 4vw, 4rem);
+	transition: all 0.2s ease-in-out;
+}
+
+.logo:hover {
+	scale: 1.2;
+}
+
+.logo:active {
+	scale: 1;
+}
+
+.menuBtn {
+	color: var(--clr-white);
+	cursor: pointer;
+	display: none;
+}
+
+@media screen and (max-width: 650px) {
+	.navlinks {
+		display: none;
+	}
+
+	.menuBtn {
+		display: block;
+	}
 }

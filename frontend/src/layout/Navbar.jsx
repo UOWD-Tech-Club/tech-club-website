@@ -1,35 +1,43 @@
+import { NavLink } from "react-router-dom";
+import { IoMenuOutline as MenuIcon } from "react-icons/io5";
+import { useState } from "react";
+
 import styles from "./Navbar.module.css";
 import navLogo from "../assets/nav-logo.svg";
+import Sidebar from "./Sidebar";
 
 function Navbar() {
+	const [isOpen, setIsOpen] = useState(false);
+
+	function toggleSidebar() {
+		setIsOpen(!isOpen);
+	}
+
+	function closeSidebar() {
+		setIsOpen(false);
+	}
+
 	return (
 		<header>
 			<nav className={`container ${styles.navbar}`}>
-				<ul className={styles.navlinks}>
-					<li>
-						<a href='#'>Home</a>
-					</li>
-					<li>
-						<a href='#'>Events</a>
-					</li>
-					<li>
-						<a href='#'>Projects</a>
-					</li>
-				</ul>
-				<a href='#' className={styles.logo}>
+				<div className={styles.navlinks}>
+					<NavLink to='/'>Home</NavLink>
+					<NavLink to='/'>Events</NavLink>
+					<NavLink to='/'>Projects</NavLink>
+				</div>
+				<NavLink to='/' className={styles.logo}>
 					<img src={navLogo} alt='Logo' />
-				</a>
-				<ul className={styles.navlinks}>
-					<li>
-						<a href='#'>Team</a>
-					</li>
-					<li>
-						<a href='#'>About Us</a>
-					</li>
-					<li>
-						<a href='#'>Socials</a>
-					</li>
-				</ul>
+				</NavLink>
+				<div className={styles.navlinks}>
+					<NavLink to='/'>Team</NavLink>
+					<NavLink to='/'>About us</NavLink>
+					<NavLink to='/'>Socials</NavLink>
+				</div>
+
+				<div className={styles.menuBtn} onClick={toggleSidebar}>
+					<MenuIcon size={40} />
+				</div>
+				<Sidebar isOpen={isOpen} closeSidebar={closeSidebar} />
 			</nav>
 		</header>
 	);

@@ -8,7 +8,9 @@
 	border-width: 2px;
 	gap: 0.5rem;
 	font-size: 0.75rem;
+	font-weight: 600;
 	padding: 0.5rem 0.75rem;
+	transition: all 0.2s ease;
 }
 
 .btnImg {
@@ -24,4 +26,16 @@
 
 .align_right {
 	align-self: flex-end;
+}
+
+.btn:hover {
+	border: 2px solid transparent;
+	background-color: var(--clr-white);
+	color: var(--clr-black);
+}
+
+.btn:active {
+	border: 2px solid transparent;
+	background-color: var(--clr-light);
+	color: var(--clr-black);
 }
