@@ -13,35 +13,38 @@ var jsonParser = bodyParser.json()
 
 //endpoints - newsletters GET, newsletters/id POST and GET and PUT
 router.get('/', auth, async (req, res) => {
-    await sql`SELECT * FROM newsletter;`
-    res.send("test1");
+    let result = await sql`SELECT * FROM newsletter;`
+
+    res.send({ 'message': 'newsletters fetched', 'data': result })
 })
 
 router.get('/:newsletterId', auth, async (req, res) => {
     let id = req.params.newsletterId;
-    let row = await sql`SELECT * FROM newsletter WHERE newsletter_id=${id};`
-    console.log(row)
-    res.send("test2" + id);
+    let result = await sql`SELECT * FROM newsletter WHERE newsletter_id=${id};`
+
+    res.send({ 'message': 'newletter fetched', 'data': result })
 })
 
 router.post('/', jsonParser, auth, async (req, res) => {
     let newsletter = req.body
 
-    await sql`insert into newsletter ${sql(newsletter, 'newsletter_title', 'newsletter_body', 'tags', 'author', 'length', 'reading_time')
-        }`
+    let result = await sql`insert into newsletter ${sql(newsletter, 'newsletter_title', 'newsletter_body', 'tags', 'author', 'length', 'reading_time')
+        } returning *`
 
-    res.send("test3");
+    res.send({ 'message': 'newsletter inserted', 'data': result })
 })
 
 router.put('/:newsletterId', auth, jsonParser, async (req, res) => {
     let id = req.params.newsletterId;
     let newsletter = req.body;
 
-    await sql`update newsletter set ${sql(newsletter, 'newsletter_title', 'newsletter_body', 'tags', 'author', 'length', 'reading_time')
+    let result = await sql`update newsletter set ${sql(newsletter, 'newsletter_title', 'newsletter_body', 'tags', 'author', 'length', 'reading_time')
         }
-    where newsletter_id = ${id}`
+    where newsletter_id = ${id} returning *`
 
-    res.send("test4" + id);
+    console.log(result)
+
+    res.send({ 'message': 'newsletter updated', 'data': result })
 })
 
 module.exports = router

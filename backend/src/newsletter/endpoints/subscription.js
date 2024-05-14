@@ -13,25 +13,25 @@ var jsonParser = bodyParser.json()
 router.post('/subscribe', auth, jsonParser, async (req, res) => {
     let email = req.body;
 
-    await sql`insert into subscriber ${sql(email, 'email')}`
+    let result = await sql`insert into subscriber ${sql(email, 'email')} returning *`
 
-    res.send("test5")
+    res.send({ 'message': 'subscribed', 'data': result })
 })
 
 router.post('/verifyEmail', auth, jsonParser, async (req, res) => {
     let id = req.body;
 
-    await sql`update subscriber set is_verified=true where subscriber_id=${id.subscriber_id}`
+    let result = await sql`update subscriber set is_verified=true where subscriber_id=${id.subscriber_id} returning *`
 
-    res.send("test6")
+    res.send({ 'message': 'email verified', 'data': result })
 })
 
 router.post('/unsubscribe', auth, jsonParser, async (req, res) => {
     let id = req.body;
 
-    await sql`delete from subscriber where subscriber_id=${id.subscriber_id}`
+    let result = await sql`delete from subscriber where subscriber_id=${id.subscriber_id} returning *`
 
-    res.send("test7")
+    res.send({ 'message': 'unsubscribed', 'data': result })
 })
 
 module.exports = router
