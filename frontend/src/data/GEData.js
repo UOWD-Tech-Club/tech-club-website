@@ -5,7 +5,7 @@ export const GEData = [
         id: 1,
         dateTime: "",
         title: "Meta Quest Pro",
-        img: "src/assets/Event-1.png",
+        img: "/Event-1.png",
         tags: [],
         link: "vr"
     },
@@ -13,7 +13,7 @@ export const GEData = [
         id: 2,
         dateTime: "",
         title: "Dubot",
-        img: "src/assets/Event-1.png",
+        img: "/Event-1.png",
         tags: [],
         link: "dubot"
     },
@@ -21,7 +21,7 @@ export const GEData = [
         id: 3,
         dateTime: "",
         title: "Wehead",
-        img: "src/assets/Event-1.png",
+        img: "/Event-1.png",
         tags: [],
         link: "wehead"
     },
@@ -29,7 +29,7 @@ export const GEData = [
         id: 4,
         dateTime: "",
         title: "Robot Dog",
-        img: "src/assets/Event-1.png",
+        img: "/Event-1.png",
         tags: [],
         link: "robodog"
     },
