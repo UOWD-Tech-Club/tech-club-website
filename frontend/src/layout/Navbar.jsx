@@ -21,17 +21,17 @@ function Navbar() {
 		<header>
 			<nav className={`container ${styles.navbar}`}>
 				<div className={styles.navlinks}>
-					<NavLink to='/'>Home</NavLink>
-					<NavLink to='/'>Events</NavLink>
-					<NavLink to='/'>Projects</NavLink>
+					<NavLink to='/tech-club-website/'>Home</NavLink>
+					<NavLink to='/tech-club-website/'>Events</NavLink>
+					<NavLink to='/tech-club-website/'>Projects</NavLink>
 				</div>
-				<NavLink to='/' className={styles.logo}>
+				<NavLink to='/tech-club-website/' className={styles.logo}>
 					<img src={navLogo} alt='Logo' />
 				</NavLink>
 				<div className={styles.navlinks}>
-					<NavLink to='/'>Team</NavLink>
-					<NavLink to='/'>About us</NavLink>
-					<NavLink to='/'>Socials</NavLink>
+					<NavLink to='/tech-club-website/'>Team</NavLink>
+					<NavLink to='/tech-club-website/'>About us</NavLink>
+					<NavLink to='/tech-club-website/'>Socials</NavLink>
 				</div>
 
 				<div className={styles.menuBtn} onClick={toggleSidebar}>

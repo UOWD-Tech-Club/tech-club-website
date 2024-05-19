@@ -1,3 +1,5 @@
+
+
 export const GEData = [
     {
         id: 1,
@@ -5,20 +7,23 @@ export const GEData = [
         title: "Meta Quest Pro",
         img: "src/assets/Event-1.png",
         tags: [],
+        link: "vr"
     },
     {
         id: 2,
         dateTime: "",
-        title: "DuBot",
+        title: "Dubot",
         img: "src/assets/Event-1.png",
         tags: [],
+        link: "dubot"
     },
     {
         id: 3,
         dateTime: "",
-        title: "WeHead",
+        title: "Wehead",
         img: "src/assets/Event-1.png",
         tags: [],
+        link: "wehead"
     },
     {
         id: 4,
@@ -26,5 +31,6 @@ export const GEData = [
         title: "Robot Dog",
         img: "src/assets/Event-1.png",
         tags: [],
+        link: "robodog"
     },
 ];

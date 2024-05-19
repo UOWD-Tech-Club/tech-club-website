@@ -51,6 +51,7 @@ function GE() {
 								img={event.img}
 								tags={event.tags}
 								key={event.id}
+								link={event.link}
 							/>
 						))}
 					</Carousel>
