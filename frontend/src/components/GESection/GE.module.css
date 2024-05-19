@@ -66,6 +66,11 @@
 }
 
 @media screen and (max-width: 650px) {
+
+	h2 {
+		font-size: 34px;
+	}
+
 	.events {
 		padding: 0rem 2rem 0rem;
 	}

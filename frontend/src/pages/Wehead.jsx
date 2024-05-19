@@ -1,14 +1,11 @@
-import { useLayoutEffect } from "react";
 
 function Wehead() {
-    useLayoutEffect(() => {
-        window.scrollTo(0, 0)
-    });
+
     return (
         <>
             <main style={{
-                "paddingTop": "min(12rem, 20vh)",
-                "padding": "15rem 5rem"
+                "paddingTop": "10rem",
+                "padding": "8rem 3rem",
             }}>
                 <h1>Wehead</h1>
                 <div style={{ "fontSize": "larger", marginTop: "1rem" }}>

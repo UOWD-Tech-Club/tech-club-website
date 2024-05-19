@@ -8,6 +8,7 @@ import Dubot from "./pages/Dubot";
 import Wehead from "./pages/Wehead";
 import VR from "./pages/VR";
 import Robodog from "./pages/robodog";
+import SocialLinks from "./components/SocialLinks/SocialLinks";
 
 function App() {
 	return (
@@ -22,6 +23,7 @@ function App() {
 					<Route path='/tech-club-website/vr' element={<VR />} />
 					<Route path='/tech-club-website/robodog' element={<Robodog />} />
 				</Routes>
+				<SocialLinks />
 				<Footer />
 			</BrowserRouter>
 		</>
