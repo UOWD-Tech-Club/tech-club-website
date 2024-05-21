@@ -1,12 +1,11 @@
+import styles from './page.module.css'
+import SocialLinks from '../components/SocialLinks/SocialLinks';
 
 function Wehead() {
 
     return (
         <>
-            <main style={{
-                "paddingTop": "10rem",
-                "padding": "8rem 3rem",
-            }}>
+            <main className={styles.pad}>
                 <h1>Wehead</h1>
                 <div style={{ "fontSize": "larger", marginTop: "1rem" }}>
                     Wehead is a 3D shaped display that brings AI conversations to life.
@@ -20,6 +19,8 @@ function Wehead() {
                     <br /> <br />WEHEAD GPT, aimed at consumers, offers an AI companion for brainstorming ideas, getting insightful feedback, and exploring various perspectives, fostering a more thoughtful and creative approach.
                 </div>
             </main>
+
+            <SocialLinks />
         </>
     );
 }

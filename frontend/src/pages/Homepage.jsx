@@ -1,6 +1,7 @@
 import Hero from "../components/HeroSection/Hero";
 import Events from "../components/EventsSection/Events";
 import GE from "../components/GESection/GE"
+import SocialLinks from "../components/SocialLinks/SocialLinks";
 /*import Newsfeed from "../components/NewsSection/Newsfeed";*/
 
 function Homepage() {
@@ -8,6 +9,7 @@ function Homepage() {
 		<>
 			<main>
 				<Hero />
+				<SocialLinks />
 				<GE />
 				<Events />
 				{/*

@@ -1,0 +1,10 @@
+.pad {
+    padding-top: 10rem;
+    padding: 8rem 10rem;
+}
+
+@media screen and (max-width: 800px) {
+    .pad {
+        padding: 8rem 1.5rem;
+    }
+}

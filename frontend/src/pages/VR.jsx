@@ -1,12 +1,11 @@
+import styles from './page.module.css'
+import SocialLinks from '../components/SocialLinks/SocialLinks';
 
 function VR() {
 
     return (
         <>
-            <main style={{
-                "paddingTop": "10rem",
-                "padding": "8rem 3rem",
-            }}>
+            <main className={styles.pad}>
                 <h1>Meta Quest Pro</h1>
                 <div style={{ "fontSize": "larger", marginTop: "1rem" }}>
                     Meta Quest Pro is a virtual reality (VR) headset developed by Meta (formerly known as Facebook). It's designed to offer an immersive VR experience with advanced features, including high-resolution displays, improved comfort, and powerful processing capabilities.
@@ -21,6 +20,8 @@ function VR() {
 
                 </div>
             </main>
+
+            <SocialLinks />
         </>
     );
 }

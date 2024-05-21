@@ -1,11 +1,11 @@
+import styles from './page.module.css'
+import SocialLinks from '../components/SocialLinks/SocialLinks';
+
 
 function Dubot() {
     return (
         <>
-            <main style={{
-                "paddingTop": "10rem",
-                "padding": "8rem 3rem",
-            }}>
+            <main className={styles.pad}>
                 <h1>Dubot</h1>
                 <div style={{ "fontSize": "larger", marginTop: "1rem" }}>
                     The Dobot Magician is a multifunctional robotic arm designed for educational, professional, and hobbyist purposes.
@@ -18,6 +18,8 @@ function Dubot() {
                     The Dobot Magician is widely used in educational settings for teaching robotics, automation, and programming concepts, as well as in prototyping and small-scale manufacturing environments.
                 </div>
             </main>
+
+            <SocialLinks />
         </>
     );
 }

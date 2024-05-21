@@ -23,7 +23,6 @@ function App() {
 					<Route path='/tech-club-website/vr' element={<VR />} />
 					<Route path='/tech-club-website/robodog' element={<Robodog />} />
 				</Routes>
-				<SocialLinks />
 				<Footer />
 			</BrowserRouter>
 		</>
