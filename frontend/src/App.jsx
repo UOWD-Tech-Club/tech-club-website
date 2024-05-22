@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter, Routes, Route, createHashRouter, RouterProvider } from "react-router-dom";
 
 import "./App.css";
 import Homepage from "./pages/Homepage";
@@ -14,14 +14,13 @@ function App() {
 	return (
 		<>
 			<HashRouter>
-
 				<Navbar />
 				<Routes>
-					<Route path='/tech-club-website/' element={<Homepage />} />
-					<Route path='/tech-club-website/dubot' element={<Dubot />} />
-					<Route path='/tech-club-website/wehead' element={<Wehead />} />
-					<Route path='/tech-club-website/vr' element={<VR />} />
-					<Route path='/tech-club-website/robodog' element={<Robodog />} />
+					<Route path='/' element={<Homepage />} />
+					<Route path='/dubot' element={<Dubot />} />
+					<Route path='/wehead' element={<Wehead />} />
+					<Route path='/vr' element={<VR />} />
+					<Route path='/robodog' element={<Robodog />} />
 				</Routes>
 				<Footer />
 			</HashRouter>
