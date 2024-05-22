@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 
 import "./App.css";
 import Homepage from "./pages/Homepage";
@@ -13,7 +13,7 @@ import SocialLinks from "./components/SocialLinks/SocialLinks";
 function App() {
 	return (
 		<>
-			<BrowserRouter>
+			<HashRouter>
 
 				<Navbar />
 				<Routes>
@@ -24,7 +24,7 @@ function App() {
 					<Route path='/tech-club-website/robodog' element={<Robodog />} />
 				</Routes>
 				<Footer />
-			</BrowserRouter>
+			</HashRouter>
 		</>
 	);
 }
