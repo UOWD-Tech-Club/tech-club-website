@@ -29,7 +29,7 @@ function Navbar() {
 					<img src={navLogo} alt='Logo' />
 				</NavLink>
 				<div className={styles.navlinks}>
-					<NavLink to='/'>Team</NavLink>
+					<NavLink to='/tech-club-website/join-us'>Team</NavLink>
 					<NavLink to='/'>About us</NavLink>
 					<NavLink to='/'>Socials</NavLink>
 				</div>
