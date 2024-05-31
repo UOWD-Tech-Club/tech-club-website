@@ -1,5 +1,9 @@
 name: ghpages-deployment
-on: workflow_dispatch
+on: 
+  push:
+    branches: 
+    - 'ge-event'
+  workflow_dispatch:
 permissions:
   contents: read
   pages: write

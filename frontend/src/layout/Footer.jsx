@@ -48,7 +48,7 @@ const Footer = () => {
 						</div>
 					</div>
 					<div className={styles.subscribe}>
-						<h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+						<h3>SUBSCRIBE TO OUR NEWSLETTER (Work in Progress)</h3>
 						<p>To get the latest updates on our workshops and more</p>
 
 						<form className={styles.form}>
