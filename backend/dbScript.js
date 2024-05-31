@@ -1,0 +1,64 @@
+import sql from './db.js'
+
+/**
+ * @createDB function to create db
+ * @createEventsTable function to create Events table
+ * @getEvents function to retreive all events
+ * @createEvent function to insert an event record
+ * @params : id,ename,ebody,edesc,etags,time_conducted,room_number,status
+ * 
+ * @getEventByName function to get event by its name
+ * @params : name of the event
+ */
+
+async function createDB(name) {
+  const users = await sql`
+   CREATE DATABASE ${ name }
+  `
+}
+
+async function createEventsTable() {
+    //CREATE ENUM TYPE FOR STATUS
+    await sql`
+     CREATE TYPE status_state AS ENUM ('ended','upcoming');
+
+    `
+    // CREATE EVENTS TABLE
+    await sql`
+        CREATE TABLE Events(
+            eid INT PRIMARY KEY,
+            ename VARCHAR(255),
+            ebody VARCHAR(255),
+            edesc VARCHAR(500),
+            etags VARCHAR(255),
+            time_conducted DATE,
+            room_number REAL,
+            status status_state,
+            created_timestamp timestamptz not null
+                default current_timestamp,
+            updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()	
+        );
+    `
+  }
+
+  async function getEvents(){
+    const events = await sql`
+        select * from events
+    `
+  }
+
+  async function getEventByName(name){
+    const events = await sql`
+        select * from events where ename = ${ename}
+    `
+  }
+
+  async function createEvent(id,ename,ebody,edesc,etags,time_conducted,room_number,status){
+    // INSERT ROW INTO EVENTS
+    await sql `
+      insert into Events values(${id},${ename},${ebody},${edesc},${etags},${time_conducted},${room_number},${status})
+    `
+  }
+
+  
+
