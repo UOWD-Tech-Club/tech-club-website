@@ -1,0 +1,19 @@
+.tagContainer {
+	display: flex;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	gap: 10px;
+	font-size: 10px;
+	white-space: nowrap;
+	text-align: center;
+}
+
+.tag {
+	font-family: Aldrich, sans-serif;
+	justify-content: center;
+	line-height: normal;
+	border-color: var(--clr-white);
+	border-style: solid;
+	border-width: 1px;
+	padding: 4px 8px;
+}
