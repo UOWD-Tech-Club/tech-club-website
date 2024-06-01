@@ -7,7 +7,7 @@ function Button({ align }) {
 			<img
 				className={styles.btnImg}
 				loading='lazy'
-				src='\src\assets\Arrow.svg'
+				src='.\Arrow.svg'
 				alt='Arrow'
 			/>
 		</button>

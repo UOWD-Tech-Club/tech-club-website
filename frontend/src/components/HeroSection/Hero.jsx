@@ -17,7 +17,7 @@ function Hero() {
 						<img
 							className={styles.btnImg}
 							loading='lazy'
-							src='\src\assets\Arrow-Down.svg'
+							src='./Arrow-Down.svg'
 							alt='Arrow'
 						/>
 					</div>

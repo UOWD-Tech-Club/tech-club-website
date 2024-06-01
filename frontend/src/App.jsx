@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import "./App.css";
 import Homepage from "./pages/Homepage";
@@ -9,14 +9,16 @@ import Footer from "./layout/Footer";
 function App() {
 	return (
 		<>
-			<BrowserRouter>
+			<HashRouter>
 				<Navbar />
 				<Routes>
-					<Route path='/tech-club-website/' element={<Homepage />} />
+
 					<Route path='/tech-club-website/join-us' element={<JoinUs />} />
+					<Route path='/' element={<Homepage />} />
+
 				</Routes>
 				<Footer />
-			</BrowserRouter>
+			</HashRouter>
 		</>
 	);
 }

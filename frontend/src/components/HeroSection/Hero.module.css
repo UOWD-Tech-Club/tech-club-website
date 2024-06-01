@@ -1,11 +1,10 @@
 .hero {
-	background: linear-gradient(
-			180deg,
+	background: linear-gradient(180deg,
 			rgba(0, 204, 164, 0.6) 2.53%,
-			rgba(0, 0, 0, 0) 93.01%
-		),
+			rgba(0, 0, 0, 0) 93.01%),
 		url("../../assets/hero-image.png") lightgray 50% / cover no-repeat;
 	padding-top: min(12rem, 20vh);
+	margin-bottom: 6rem;
 	min-height: min(100vh, 70vw);
 }
 
@@ -108,5 +107,9 @@
 	.subtitle {
 		align-self: center;
 		text-align: center;
+	}
+
+	.hero {
+		margin-bottom: 0rem;
 	}
 }
