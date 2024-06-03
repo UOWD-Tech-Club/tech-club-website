@@ -4,6 +4,7 @@ import "./App.css";
 import Homepage from "./pages/Homepage";
 import Navbar from "./layout/Navbar";
 import Footer from "./layout/Footer";
+import BackendWSForm from "./pages/BackendWSForm";
 
 function App() {
 	return (
@@ -11,6 +12,7 @@ function App() {
 			<HashRouter>
 				<Navbar />
 				<Routes>
+					<Route path='/backend' element={<BackendWSForm />} />
 					<Route path='/' element={<Homepage />} />
 				</Routes>
 				<Footer />

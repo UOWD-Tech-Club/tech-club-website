@@ -10,7 +10,6 @@ function Homepage() {
 				<Hero />
 				<SocialLinks />
 				<Events />
-				<Newsfeed />
 			</main>
 		</>
 	);
