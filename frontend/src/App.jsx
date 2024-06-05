@@ -12,7 +12,7 @@ function App() {
 			<HashRouter>
 				<Navbar />
 				<Routes>
-					<Route path='/backend' element={<BackendWSForm />} />
+					<Route path='/form' element={<BackendWSForm />} />
 					<Route path='/' element={<Homepage />} />
 				</Routes>
 				<Footer />
