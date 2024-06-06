@@ -29,9 +29,11 @@ function Navbar() {
 					<img src={navLogo} alt='Logo' />
 				</NavLink>
 				<div className={styles.navlinks}>
+
 					<NavLink to='/tech-club-website/'>Team</NavLink>
 					<NavLink to='/tech-club-website/'>About us</NavLink>
 					<NavLink to='/tech-club-website/'>Socials</NavLink>
+
 				</div>
 
 				<div className={styles.menuBtn} onClick={toggleSidebar}>
