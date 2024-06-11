@@ -3,14 +3,19 @@ require('dotenv').config()
 
 const express = require('express')
 
-const newsletter = require('./newsletter/endpoints/data.js')
-const subscription = require('./newsletter/endpoints/subscription.js')
+// const newsletter = require("./newsletter/endpoints/data.js");
+// const subscription = require("./newsletter/endpoints/subscription.js");
 
-const app = express()
-const port = 3000
+//verifying endpoints for projects
+const projects = require("./projects/endpoints/data.js");
 
-app.use('/newsletters', newsletter)
-app.use('/subscriptions', subscription)
+const app = express();
+const port = 3000;
+
+app.use("/projects", projects);
+
+// app.use("/newsletters", newsletter);
+// app.use("/subscriptions", subscription);
 
 app.get('/', (req, res) => {
     res.send('Hello World!');
