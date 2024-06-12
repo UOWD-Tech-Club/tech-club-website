@@ -10,7 +10,7 @@ function BackendWSForm() {
                 <div><br /><br /><br /><br /><br /><br /></div>
                 <SocialLinks />
 
-                <h4 className="desc">
+                <h4 style={{marginTop: "10rem"}}>
                     "Unlocking the Future: An Introduction to the Internet Computer Protocol" is a dynamic training session designed for university students. They will be introduced to the fundamentals of blockchain technology and the innovative Internet Computer Protocol (ICP). Participants can expect to explore ICP’s architecture, engage in hands-on exercises, and discover its real-world applications. Ideal for all disciplines, no prior blockchain experience is required. They will gain insights from industry experts and enhance their knowledge for future career opportunities.
                 </h4>
                 
