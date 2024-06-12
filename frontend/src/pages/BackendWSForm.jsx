@@ -7,7 +7,6 @@ function BackendWSForm() {
         <>
             <main>
                  <h1 style={{marginTop: "10rem",textAlign:'center',fontFamily: 'sans-serif'}}>
-                <h1>
                     Unlocking the Future: An Introduction to the Internet Computer Protocol
                 </h1>
                 <h4 style={{marginTop: "2rem",textAlign:'center'}}>
